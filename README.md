@@ -4,6 +4,8 @@ Example implementation of a vllm server to extract diagnoses from medical notes.
 ## Usage
 Create virtual env and install requirements: `pip install -r requirements.txt`.
 
+Make sure you have a huggingface access token in your environment `HF_TOKEN` that's accepted Google's usage license: https://huggingface.co/google/gemma-2b.
+
 Run the server: `python code/server.py`.
 
 Test a request: `curl -X POST http://localhost:5000/generate \
