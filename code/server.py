@@ -30,7 +30,7 @@ def generate():
         logger.debug(f"Raw response: {generated_text}")
 
         # Extract the diagnoses part
-        diagnoses_text = generated_text.split("Diagnoses (supported by symptoms):")[
+        diagnoses_text = generated_text.split("Diagnoses:")[
             -1
         ].strip()
 
